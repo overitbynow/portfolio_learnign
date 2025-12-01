@@ -6,12 +6,34 @@
     <title>Game 1</title>
     <link rel="stylesheet" href = "shared.css">
         <script type ="module" src = "customElement.js"></script>
+    <link rel="stylesheet" href = "gamePage.css">
 
 </head>
 <body>
-        <my-header></my-header>
+            <my-header></my-header>
+
+    <div id = "bodyContainer">
+        <p>DESCRIPTION</p>
+        <div id="imageContainer">
+            <div class = "slide">
+                <img src = "Images/Image1.png" alt="">
+                <p>CAPTIONNNNN1</p>
+            </div>
+            <div class="slide">
+                <img src = "Images/Image2.png" alt="">
+                <p>CAPTIONNNNN2</p>
+            </div>
+            <div class="slide">
+                <img src = "Images/Image3.png" alt="">
+                <p>CAPTIONNNNN3</p>
+            </div>
+            <a id="prevImg"  onclick = "showSlide(1)">&#10094;</a>
+            <a id="nextImg" onclick = "showSlide(-1)">&#10095;</a>
+
+        </div>
+    </div>
             <my-footer></my-footer>
 
 </body>
-
+    <script src="gamePage.js"></script>
 </html>
